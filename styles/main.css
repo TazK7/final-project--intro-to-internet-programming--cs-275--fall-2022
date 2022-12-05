@@ -1,0 +1,22 @@
+header{ /* This section of code is styling the header*/
+  background-color: #21bde1;
+  text-align: right;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header a{ /* Styling the Show Menu and Show Modal white*/
+  color: white;
+}
+
+a{ /* Giving the a elements a font-family and removing underscores*/
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul{ /* Removing bullets */
+  list-style: none;
+}
+
