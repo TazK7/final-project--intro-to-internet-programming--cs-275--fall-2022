@@ -3,6 +3,12 @@ window.onload = () => {
     let card = document.getElementById(`card`);
 
     card.addEventListener(`click`, () => {
-        hide.classList.remove(`hide`);
+        if(!hide.classList.contains(`hide`)) {
+            hide.classList.add(`hide`);
+        }
+        else{
+            hide.classList.remove(`hide`);
+        }
     });
 };
+
