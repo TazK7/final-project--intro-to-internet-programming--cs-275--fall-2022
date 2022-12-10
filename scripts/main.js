@@ -1,4 +1,5 @@
 window.onload = () => {
+    //Declaring all the Variables that will be used
     let hide = document.querySelectorAll(`ul`)[0];
     let selectDiv = document.querySelectorAll(`div`)[0];
     let displayModal = document.getElementById(`cover`);
@@ -24,6 +25,13 @@ window.onload = () => {
             !selectDiv.classList.contains(`hide`);
             selectDiv.classList.add(`hide`);
             selectBody.classList.remove(`remove-scroll`);
+        }
+    });
+
+    //This EventListener removes the modal when esc button is clicked
+    displayModal.addEventListener(`keydown`, (e) => {
+        if(e.key === `Escape` && !selectDiv.classList.contains(`hide`)){
+            selectDiv.click();
         }
     });
 };
