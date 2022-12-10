@@ -16,10 +16,6 @@ a{ /* Giving the a elements a font-family and removing underscores*/
   font-family: "Open Sans", sans-serif;
 }
 
-nav ul {
-  background-color: orange;
-}
-
 ul{ /* Removing bullets */
   list-style: none;
 }
@@ -43,6 +39,7 @@ nav a {
   text-align: center;
   text-decoration: none;
   color: white;
+  background-color: orange;
 }
 
 nav a:hover {
@@ -60,7 +57,6 @@ nav > ul > li {
   position: relative;
   flex-grow: 1;
   margin: 0;
-  background-color: orange;
   border-style: solid;
   border-width: 3px;
   border-color: #21bde1;
@@ -85,3 +81,17 @@ nav > ul > li > ul a {
 .hide {
   display: none;
 }
+
+.modal-panel{
+  /*display: none;*/
+}
+
+@media (max-width: 736px) {
+  nav{
+    left: 0px;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+}
+
