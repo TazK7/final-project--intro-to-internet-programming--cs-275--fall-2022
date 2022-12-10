@@ -82,8 +82,11 @@ nav > ul > li > ul a {
   display: none;
 }
 
-.modal-panel{
-  background-color: rgba(0,0,0,0.3);
+.modal-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -91,10 +94,10 @@ nav > ul > li > ul a {
   width: 100vw;
 }
 
-.modal-content-pane{
+.modal-content-pane {
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 70vw;
+  height: 80vh;
 }
 
 @media (max-width: 736px) {
