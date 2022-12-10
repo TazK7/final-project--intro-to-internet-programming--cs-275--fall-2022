@@ -5,6 +5,9 @@ header{ /* This section of code is styling the header*/
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  /* Remember these rules will make sure you have no space at the top of header
+  position: absolute;
+  top: 0; */
 }
 
 header a{ /* Styling the Show Menu and Show Modal white*/
@@ -83,9 +86,6 @@ nav > ul > li > ul a {
 }
 
 .modal-panel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(0,0,0,0.5);
   position: fixed;
   top: 0;
@@ -98,6 +98,13 @@ nav > ul > li > ul a {
   background-color: white;
   width: 70vw;
   height: 80vh;
+  margin-top: 75px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.remove-scroll{
+  overflow: hidden;
 }
 
 @media (max-width: 736px) {
