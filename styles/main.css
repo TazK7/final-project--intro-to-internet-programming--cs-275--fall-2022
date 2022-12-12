@@ -106,7 +106,7 @@ nav > ul > li > ul a {
 }
 
 @media (max-width: 736px) {
-  nav g {
+  nav {
     left: 0;
   }
 
