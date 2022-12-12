@@ -43,19 +43,19 @@ let transpileJSForProd = () => {
     return src(`scripts/main.js`)
         .pipe(babel())
         .pipe(jsCompressor())
-        .pipe(dest(`prod/js`));
+        .pipe(dest(`prod/scripts`));
 };
 
 let compressCSS = () => {
     return src(`styles/main.css`)
         .pipe(cssCompressor({compatibility: `ie8`}))
-        .pipe(dest(`prod/css`));
+        .pipe(dest(`prod/styles`));
 };
 
 let transpileJSForDev = () => {
     return src(`scripts/main.js`)
         .pipe(babel())
-        .pipe(dest(`temp/js`));
+        .pipe(dest(`temp/scripts`));
 };
 
 let serve = () => {
