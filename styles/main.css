@@ -1,5 +1,5 @@
 
-header{ /* This section of code is styling the header*/
+header { /* This section of code is styling the header*/
   background-color: #21bde1;
   text-align: right;
   text-decoration: none;
@@ -8,16 +8,16 @@ header{ /* This section of code is styling the header*/
   padding-right: 10px;
 }
 
-header a{ /* Styling the Show Menu and Show Modal white*/
+header a { /* Styling the Show Menu and Show Modal white*/
   color: white;
 }
 
-a{ /* Giving the a elements a font-family and removing underscores*/
+a { /* Giving the a elements a font-family and removing underscores*/
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-ul{ /* Removing bullets */
+ul { /* Removing bullets */
   list-style: none;
 }
 
@@ -84,7 +84,7 @@ nav > ul > li > ul a {
 }
 
 .modal-panel {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, .5);
   position: fixed;
   top: 0;
   left: 0;
@@ -101,16 +101,16 @@ nav > ul > li > ul a {
   margin-left: auto;
 }
 
-.remove-scroll{
+.remove-scroll {
   overflow: hidden;
 }
 
 @media (max-width: 736px) {
-  nav{
-    left: 0px;
+  nav g {
+    left: 0;
   }
-  nav ul{
+
+  nav ul {
     flex-direction: column;
   }
 }
-
